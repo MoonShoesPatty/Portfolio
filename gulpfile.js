@@ -15,7 +15,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-    gulp.src('./dev/scripts/main.js')
+    gulp.src('./dev/scripts/script.js')
         .pipe(babel({
             presets: ['env']
         }))
@@ -25,7 +25,7 @@ gulp.task('scripts', () => {
 
 gulp.task('watch', function () {
 	gulp.watch('./dev/styles/**/*.scss', ['styles']);
-	gulp.watch('./dev/scripts/main.js', ['scripts']);
+	gulp.watch('./dev/scripts/script.js', ['scripts']);
 	gulp.watch('*.html', reload);
 });
 
