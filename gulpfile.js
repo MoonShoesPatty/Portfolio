@@ -12,6 +12,7 @@ gulp.task('styles', () => {
 		.pipe(autoprefixer())
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('./public/styles/'))
+		.pipe(reload({ stream: true }));
 });
 
 gulp.task('scripts', () => {
