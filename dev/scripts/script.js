@@ -16,9 +16,17 @@ portfolio.scrollMagicScene = function (elementID, classToAdd) {
 	.addTo(portfolio.controller)
 }
 
+portfolio.removeLandingPage = function (elementID, classToAdd) {
+	let newScene = new ScrollMagic.Scene({
+		triggerElement: elementID,
+		offset: 200
+	})
+		.setClassToggle(elementID, classToAdd)
+		.addTo(portfolio.controller)
+}
+
 // Social Media Icons Slide In
 portfolio.smIconScene = function (elementClass, classToAdd) {
-	console.log('Firing?')
 	let newScene = new ScrollMagic.Scene({
 		triggerElement: '#aboutSection'
 	})
@@ -41,8 +49,9 @@ portfolio.scrollMagicSceneDuration = function (elementID, classToAdd, customDura
 portfolio.init = function () {
 	portfolio.scrollMagicScene('#portfolioItem01', 'portfolioFadeIn');
 	portfolio.scrollMagicScene('#portfolioItem02', 'portfolioFadeIn');
+	//portfolio.removeLandingPage('#FN', 'pageTitleFN');
 	portfolio.smIconScene('.smIcon__icon', 'smIcon__icon--slideIn');
-	portfolio.scrollMagicSceneDuration('#landingPage', 'headerFadeOut', portfolio.windowHeight);
+	//portfolio.scrollMagicSceneDuration('#landingPage', 'headerFadeOut', portfolio.windowHeight);
 }
 
 // Document Ready
