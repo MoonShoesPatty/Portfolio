@@ -1,33 +1,35 @@
+/* ----- BLUE SLIDE FOR SMOOTH TRANSITIONS B/W PAGES -----*/
+
 .transitionFrame {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
 }
-.transitionAbove {
-    z-index: 10000;
+.transitionAbove { // Add on transition request, hide otherwise (links will not be clickable if frame is always above)
+	z-index: 10000;
 }
 .transitionBox {
-    background-image: linear-gradient(#12B4E9, rgb(0, 77, 100));
-    height: 100%;
-    width: 100%;
-    position: relative;
-    animation: initialFade 0.8s forwards ease-in;
-}
-.transitionSlideRight {
+	background-image: linear-gradient($mainColor, rgb(0, 77, 100));
+	height: 100%;
+	width: 100%;
+	position: relative;
+	animation: initialFade 0.8s forwards ease-in;
 }
 
+/* ----- ANIMATIONS -----*/
+// Blue fade in, then slide right on initial page load
 @keyframes initialFade {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-        left: 0;
-    }
-    100% {
-        left: 100vw;
-    }
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+		left: 0;
+	}
+	100% {
+		left: 100vw;
+	}
 }

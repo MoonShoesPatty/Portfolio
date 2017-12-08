@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Patrick Johnston</title>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,800" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet"> -->
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-	<div class="transitionFrame transitionAbove">
+	<div class="transitionFrame">
 		<div class="transitionBox"></div>
 	</div>
-	<header>
+	<header id="landingPage" class="landingPage">
 		<div class="backgroundImage"></div>
 		<div class="pageTitleWrapper">
 			<div>
@@ -22,11 +23,32 @@
 				<h1 class="pageTitleLN">Johnston</h1>
 			</div>
 			<div>
-				<p class="pageSubtitle"><span>Developer </span><span>Designer </span><span>Handsome Man</span></p>
+				<p class="pageSubtitle"><span>Developer </span><span>- Designer </span><span>- Handsome Man</span></p>
 			</div>
 		</div>
 	</header>
-	<main>
+	<aside class="socialIcons">
+		<ul class="smIcon__list">
+			<li class="smIcon__icon"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			<li class="smIcon__icon"><i class="fa fa-github" aria-hidden="true"></i></li>
+			<li class="smIcon__icon"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+		</ul>
+	</aside>
+	<section class="aboutSection">
+		<div class="wrapper">
+			<div class="sectionHeader">
+				<h2 class="sectionHeader__title">About</h2>
+			</div>
+			<div class="subSection">
+				<img class="aboutHeadshot" src="public/assets/patrickJohnstonHeadshot.jpg" alt="The most stunning picture of Patrick Johnston. Sorry you can't see it, you're really missing out right now.">				
+				<div class="subSection__textWrapper">
+					<h3 class="subSection__header">Who Am I?</h3>
+					<p class="subSection__bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam similique ducimus aspernatur temporibus atque reiciendis ullam ab id nam minus ad perferendis est veritatis et iusto illo, saepe accusantium.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <main class="portfolioSection">
 		<section id="portfolioItem01" class="portfolioItem">
 			<div class="portfolioItem__description">
 				<h2>First item</h2>
@@ -43,7 +65,10 @@
 			</div>
 			<img src="public/assets/macbookPokedex.png" alt="A pokedex built using jQuery &amp; API calls" class="portfolioItem__sampleImg">
 		</section>
-	</main>
+	</main> -->
+	<section class="contactSection">
+
+	</section>
 	<footer>
 
 	</footer>

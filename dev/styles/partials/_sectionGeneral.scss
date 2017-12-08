@@ -1,0 +1,43 @@
+/* ----- GENERAL SECTION STYLINGS -----*/
+section, main {
+	padding: 50px 0;
+	background-color: $lightColor;
+}
+// Section title
+.sectionHeader {
+    position: relative;
+}
+.sectionHeader::before, .sectionHeader::after {
+	content: '';
+	display: block;
+}
+.sectionHeader::before {
+	background-color: $darkColor;
+	height: 3px;
+	position: absolute;
+	bottom: 35%;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	opacity: 0.5;
+}
+.sectionHeader::after {
+	background-color: orange;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+.sectionHeader__title {
+	position: relative;
+	left: 2%;
+	padding: 0 10px;
+	font-size: 3rem;
+	margin: 0;
+	z-index: 10;
+	display: inline-block;
+    background-color: $lightColor;
+    color: #000000;
+}

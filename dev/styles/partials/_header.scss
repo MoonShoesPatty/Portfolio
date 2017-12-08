@@ -1,72 +1,92 @@
+/* ----- LANDING PAGE -----*/
+
 header {
-    min-height: 100vh;
-    overflow: hidden;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.landingPage {
+	opacity: 1;
+}
+.headerFadeOut {
+	opacity: 0;
 }
 .backgroundImage {
-    background-image: url('../assets/jainaBackground.jpg');
-    background-size: cover;
-    filter: grayscale(100%);
-    opacity: 0;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    animation: initialBackground 0.5s 0.9s forwards ease-out;
+	background-image: url('../assets/jainaBackground.jpg');
+	background-size: cover;
+	filter: grayscale(100%);
+	opacity: 0;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	animation: initialBackground 0.5s 0.8s forwards ease-out;
 }
+
+/* ----- PAGE TITLE & SUBTITLE -----*/
 .pageTitleWrapper {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
 }
 .pageTitleWrapper div {
-    overflow: hidden;
+	overflow: hidden;
 }
 .pageTitleFN, .pageTitleLN {
-    color: $mainColor;
-    opacity: 0;
-    margin: 0;
-    font-size: 6rem;
-    position: relative;
+	color: $mainColor;
+	opacity: 0;
+	margin: 0;
+	font-size: 6rem;
+	position: relative;
 }
-.pageTitleFN {
-    animation: initialText 0.5s 0.7s forwards ease-out;
+.pageTitleFN { //First Name - First line of title
+	animation: initialText 0.5s 0.7s forwards ease-out;
 }
-.pageTitleLN {
-    animation: initialText 0.5s 1s forwards ease-out;
+.pageTitleLN { //Last Name - Second line of title
+	animation: initialText 0.5s 1s forwards ease-out;
 }
 .pageSubtitle span {
-    color: white;
-    font-size: 1.6rem;
-    opacity: 0;
-    margin: 0;
+	color: white;
+	font-size: 1.6rem;
+	opacity: 0;
+	margin: 0;
+	position: relative;
 }
 .pageSubtitle span:nth-child(1) {
-    animation: initialText 0.5s 1.3s forwards ease-out;
+	animation: initialText 0.6s 1.6s forwards ease-out;
 }
 .pageSubtitle span:nth-child(2) {
-    animation: initialText 0.5s 1.6s forwards ease-out;
+	animation: initialText 0.6s 2.1s forwards ease-out;
 }
 .pageSubtitle span:nth-child(3) {
-    animation: initialText 0.5s 1.9s forwards ease-out;
+	animation: initialText 0.6s 2.6s forwards ease-out;
 }
+
+/* ----- ANIMATION DEFINITIONS -----*/
+// Text fade in and slide up
 @keyframes initialText {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
+// Background fade in and scale down
 @keyframes initialBackground {
-    0% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100% {
-        opacity: 0.15;
-        transform: scale(1);
-    }
+	0% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 0.15;
+		transform: scale(1);
+	}
 }

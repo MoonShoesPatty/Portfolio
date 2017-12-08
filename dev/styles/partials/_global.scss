@@ -1,5 +1,17 @@
+/* ----- GLOBAL STYLINGS -----*/
+
 body {
-    background-color: black;
-    font-size: 62.5%;
-    font-family: $mainFont;
+	background-color: black;
+	font-size: 62.5%;
+	font-family: $mainFont;
+	color: $darkColor;
+}
+.wrapper {
+	max-width: 1040px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+// Give space to landing page
+.aboutSection {
+	margin-top: 100vh;
 }
