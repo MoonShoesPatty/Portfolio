@@ -1,7 +1,7 @@
 /* ----- GENERAL SECTION STYLINGS -----*/
 section, main {
 	padding: 50px 0;
-	background-color: $lightColor;
+	background-color: $darkColor;
 }
 // Section title
 .sectionHeader {
@@ -12,14 +12,13 @@ section, main {
 	display: block;
 }
 .sectionHeader::before {
-	background-color: $darkColor;
+	background-color: $mainColor;
 	height: 3px;
 	position: absolute;
 	bottom: 35%;
 	left: 0;
 	right: 0;
 	z-index: 2;
-	opacity: 0.5;
 }
 .sectionHeader::after {
 	background-color: orange;
@@ -38,6 +37,6 @@ section, main {
 	margin: 0;
 	z-index: 10;
 	display: inline-block;
-    background-color: $lightColor;
-    color: #000000;
+    background-color: $darkColor;
+    color: $lightColor;
 }

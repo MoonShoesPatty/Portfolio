@@ -5,3 +5,35 @@
     right: 5%;
     bottom: 5%;
 }
+.smIcon__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.smIcon__icon {
+    font-size: 1.8rem;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+    color: $lightColor;
+    opacity: 0;
+    position: relative;
+    left: 50px;
+}
+#twitterIcon .smIcon__icon {
+    transition: all 0.2s ease-out;
+}
+#gitHubIcon .smIcon__icon {
+    transition: opacity 0.2s 0.08s ease-out, left 0.2s 0.08s ease-out, color 0.2s ease-out;
+}
+#linkedInIcon .smIcon__icon {
+    transition: opacity 0.2s 0.16s ease-out, left 0.2s 0.16s ease-out, color 0.2s ease-out;
+}
+.smIcon__icon--slideIn {
+    left: 0;
+    opacity: 1;
+}
+.smIcon__icon:hover {
+    color: $mainColor;
+}

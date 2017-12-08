@@ -1,7 +1,7 @@
 /* ----- ABOUT SECTION -----*/
 
 .subSection {
-	background-color: $lightColor;
+	background-color: #111111;
 	box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
 	position: relative;
 	display: flex;
@@ -21,6 +21,7 @@
 }
 .subSection__textWrapper {
 	width: 60%;
+	color: $lightColor;
 	// position: relative;
 	// left: 40%;
 }
