@@ -18,14 +18,6 @@
 	width: 100%;
 	display: block;
 }
-.portfolioItem__imageContainer::before,
-.portfolioItem__imageContainer::after  {
-	content: '';
-	display: block;
-	height: 3px;
-	background-color: $mainColor;
-	position: relative;
-}
 .portfolioItem__imageContainer::before {
 	top: -6px;
 }
