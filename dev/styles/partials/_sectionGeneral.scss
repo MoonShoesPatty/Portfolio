@@ -1,7 +1,9 @@
 /* ----- GENERAL SECTION STYLINGS -----*/
 section, main {
 	padding: 50px 0;
-	background-color: rgba(17,17,17,0.9);
+	background-color: $darkColor;
+	z-index: -100;
+	//background-image: linear-gradient(to right, black, transparent 10%, transparent 90%, black)
 }
 // Section title
 .sectionHeader {
@@ -21,7 +23,7 @@ section, main {
 	z-index: 2;
 }
 .sectionHeader::after {
-	background-color: orange;
+	//background-color: orange;
 	height: 50px;
 	position: absolute;
 	bottom: 0;

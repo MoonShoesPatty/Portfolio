@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Patrick Johnston</title>
 	<!-- Font Import -->
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,800" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Montserrat:700" rel="stylesheet">
+	<!-- Dev Icons -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<!-- Custom Styles -->
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 	<!-- Sweep across screen -->
 	<div class="transitionFrame">
-		<div class="transitionBox"></div>
+		<!-- <div class="transitionBox"></div> -->
 	</div>
 
 	<!-- Landing Page -->
 	<header id="landingPage" class="landingPage">
-		<div class="backgroundImage"></div>
 		<div class="pageTitleWrapper">
 			<div>
-				<h1 id="FN" class="pageTitleFN">Patrick</h1>
+				<h1 class="pageTitleFN">Patrick</h1>
+				<h1 class="pageTitleFN--reflection">Patrick</h1>
 			</div>
 			<div>
 				<h1 class="pageTitleLN">Johnston</h1>
+				<h1 class="pageTitleLN--reflection">Johnston</h1>
 			</div>
 			<div>
 				<p class="pageSubtitle"><span>Developer </span><span>- Designer </span><span>- Handsome Man</span></p>
@@ -48,13 +50,28 @@
 			<div class="sectionHeader">
 				<h2 class="sectionHeader__title">About</h2>
 			</div>
-			<div class="subSection">
-				<img class="aboutHeadshot" src="public/assets/patrickJohnstonHeadshot.jpg" alt="The most stunning picture of Patrick Johnston. Sorry you can't see it, you're really missing out right now.">				
+			<!-- Who Am I Section -->
+			<div class="subSection clearfix">
+				<img class="aboutHeadshot" src="public/assets/patrickJohnstonHeadshot.jpg" alt="The most stunning headshot of Patrick Johnston.">				
 				<div class="subSection__textWrapper">
 					<h3 class="subSection__header">Who Am I?</h3>
 					<p class="subSection__bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam similique ducimus aspernatur temporibus atque reiciendis ullam ab id nam minus ad perferendis est veritatis et iusto illo, saepe accusantium.</p>
 				</div>
 			</div>
+			<!-- Skills Section -->
+			<ul class="subSection graphSection">
+				<li class="graphBar">
+					<p class="graphBar__label">React</p>
+					<i class="graphBar__icon devicon-react-original"></i>
+					<ul class="graphBar__barList">
+						<li class="graphBar__barUnit"></li>
+						<li class="graphBar__barUnit"></li>
+						<li class="graphBar__barUnit"></li>
+						<li class="graphBar__barUnit"></li>
+						<li class="graphBar__barUnit"></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</section>
 

@@ -6,6 +6,10 @@ body {
 	font-family: $mainFont;
 	color: $darkColor;
 }
+p {
+	font-family: $bodyFont;
+	font-weight: 300;
+}
 .wrapper {
 	max-width: 1040px;
 	margin: 0 auto;

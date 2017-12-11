@@ -15,40 +15,67 @@ header {
 .headerFadeOut {
 	opacity: 0;
 }
-.backgroundImage {
-	background-image: url('../assets/jainaBackground.jpg');
-	background-size: cover;
-	filter: grayscale(100%);
-	opacity: 0;
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-	animation: initialBackground 0.5s 0.8s forwards ease-out;
-}
 
 /* ----- PAGE TITLE & SUBTITLE -----*/
 .pageTitleWrapper {
-	width: 50%;
-	position: absolute;
+	width: 90%;
+	position: fixed;
 	top: 50%;
-	left: 10%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .pageTitleWrapper div {
-	overflow: hidden;
+	//overflow: hidden;
+	position: relative;
 }
 .pageTitleFN, .pageTitleLN {
+	position: relative;
+	background-image: linear-gradient(
+						transparent 30%,
+						rgba(255,255,255,0.2) 45%,
+						transparent 48%),
+				linear-gradient(to bottom, 
+					rgb(49, 207, 255),
+					rgb(1, 104, 136));
+}
+.pageTitleFN { //First Name - First line of title
+	animation: initialText 1.2s forwards ease-out;
+}
+.pageTitleLN { //Last Name - Second line of title
+	animation: initialText 1.2s 0.6s forwards ease-out;
+}
+.pageTitleFN--reflection { //First Name - First line of title
+	animation: initialText--reflection 1.2s forwards ease-out;
+}
+.pageTitleLN--reflection { //Last Name - Second line of title
+	animation: initialText--reflection 1.2s 0.4s forwards ease-out;
+}
+.pageTitleFN--reflection, .pageTitleLN--reflection {
+	position: absolute;
+	left: 50%;
+	background-image: linear-gradient(to bottom, 
+						rgba(0,0,0,1) 50%,
+						rgb(3, 123, 160));
+	transform: scaleY(-1)
+			   translateX(-50%);
+}
+.pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
 	color: $mainColor;
+    -webkit-text-fill-color: transparent;
 	opacity: 0;
 	margin: 0;
 	font-size: 6rem;
-	position: relative;
+	-webkit-background-clip: text;
+	background-clip: text;
 }
-.pageTitleFN { //First Name - First line of title
-	animation: initialText 0.5s 0.7s forwards ease-out;
+.pageTitleLN {
+	margin-bottom: 50px;
 }
-.pageTitleLN { //Last Name - Second line of title
-	animation: initialText 0.5s 1s forwards ease-out;
+.pageSubtitle {
+	text-align: center;
 }
 .pageSubtitle span {
 	color: white;
@@ -82,6 +109,16 @@ header {
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+@keyframes initialText--reflection {
+	0% {
+		opacity: 0;
+		bottom: calc(-60% - 50px);
+	}
+	100% {
+		opacity: 0.6;
+		bottom: -60%;
 	}
 }
 // Background fade in and scale down
