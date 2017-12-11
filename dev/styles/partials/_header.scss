@@ -15,7 +15,6 @@ header {
 .headerFadeOut {
 	opacity: 0;
 }
-
 /* ----- PAGE TITLE & SUBTITLE -----*/
 .pageTitleWrapper {
 	width: 90%;
@@ -48,7 +47,7 @@ header {
 	animation: initialText--reflection 1.2s forwards ease-out;
 }
 .pageTitleLN--reflection { //Last Name - Second line of title
-	animation: initialText--reflection 1.2s 0.4s forwards ease-out;
+	animation: initialText--reflection 1.2s 0.6s forwards ease-out;
 }
 .pageTitleFN--reflection, .pageTitleLN--reflection {
 	position: absolute;
@@ -85,13 +84,13 @@ header {
 	position: relative;
 }
 .pageSubtitle span:nth-child(1) {
-	animation: initialText 0.6s 1.6s forwards ease-out;
+	animation: initialText 1s 1.4s forwards ease-out;
 }
 .pageSubtitle span:nth-child(2) {
-	animation: initialText 0.6s 2.1s forwards ease-out;
+	animation: initialText 1s 2.1s forwards ease-out;
 }
 .pageSubtitle span:nth-child(3) {
-	animation: initialText 0.6s 2.6s forwards ease-out;
+	animation: initialText 1s 2.8s forwards ease-out;
 }
 
 .landingPageHide {
