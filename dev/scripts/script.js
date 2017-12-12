@@ -20,7 +20,7 @@ portfolio.scrollMagicScene = function (elementID, classToAdd) {
 portfolio.portfolioItems = function (elementID, classToAdd) {
 	let newScene = new ScrollMagic.Scene({
 		triggerElement: elementID,
-		offset: portfolio.offset + 100
+		offset: portfolio.offset + 150
 	})
 		.setClassToggle(elementID, classToAdd)
 		.addTo(portfolio.controller)
