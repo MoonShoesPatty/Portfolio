@@ -55,3 +55,12 @@ section, main {
 	// -webkit-background-clip: text;
 	// background-clip: text;
 }
+.subSection__bodyText {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+.subSection__bodyText em {
+	// color: $mainColor;
+	font-style: normal;
+	font-weight: bold;
+}
