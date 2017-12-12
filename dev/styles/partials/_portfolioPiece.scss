@@ -1,41 +1,8 @@
-// .portfolioItem {
-// 	max-width: 960px;
-// 	width: 90%;
-// 	margin: 0 auto;
-// 	position: relative;
-// 	opacity: 0;
-// 	transition: all 0.5s ease-out;
-// 	z-index: 20;
-// }
-// .portfolioItem__title {
-// 	color: $lightColor;
-// 	margin: 0;
-// 	font-size: 2.4rem;
-// }
-// .portfolioItem__sampleImage {
-// 	// border-top: 3px solid $mainColor;
-// 	// border-bottom: 3px solid $mainColor;
-// 	width: 100%;
-// 	display: block;
-// }
-// .portfolioItem__imageContainer::before {
-// 	top: -6px;
-// }
-// .portfolioItem__imageContainer::after {
-// 	top: 6px;
-// }
-// .portfolioItem__description {
-// 	color: white;
-// 	font-size: 1.6rem;
-// }
-// .portfolioFadeIn {
-// 	opacity: 1;
-// }
-
 .portfolioItem {
 	max-width: 960px;
 	width: 90%;
 	margin: 0 auto;
+	padding: 0;
 	margin-top: 50px;
 	position: relative;
 	opacity: 0;
@@ -44,14 +11,34 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.portfolioItem .subSection__header {
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+.portfolioItem .subSection__header::after {
+	content: '';
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	height: 3px;
+	width: 100%;
+	background-image: linear-gradient(to right, transparent, rgb(18, 183, 233), transparent);
+	position: relative;
+	z-index: 100;
+}
+.portfolioItem .subSection__bodyText {
+	margin: 0;
 }
 .portfolioImageWrapper {
-	width: 38%;
+	width: 48%;
 	margin: 0;
 	position: relative;
 }
 .portfolioDescriptionWrapper {
-	width: 58%;
+	width: 48%;
 	margin: 0;
 	color: $lightColor;
 }
@@ -64,7 +51,7 @@
 .portfolioSampleImage--reflection {
 	position: absolute;
 	transform: scaleY(-1);
-	opacity: 0.2;
+	opacity: 0.3;
 	width: 100%;
 }
 .sampleImageFade {
@@ -78,36 +65,35 @@
 .portfolioFadeIn {
 	opacity: 1;
 }
-.portfolioConceptsList::before {
-	content: '';
-	display: block;
-	height: 3px;
-	width: 100%;
-	background-image: linear-gradient(to right, transparent 10%, rgba(18, 183, 233, 0.6), transparent 90%);
-}
 .portfolioConceptsList {
 	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
 	margin: 0;
+	margin-top: 25px;
 	padding: 0;
+	justify-content: center;
 }
 .portfolioConceptItem {
 	font-family: $bodyFont;
+	color: $lightColor;
 	font-weight: 300;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	margin: 10px;
 	padding-bottom: 10px;
+	font-style: italic;
 }
 .portfolioLinkWrapper {
 	display: flex;
 	justify-content: center;
+	z-index: 100;
+	position: relative;
 }
 .portfolioItemLink {
 	text-decoration: none;
 	font-family: $mainFont;
 	font-weight: 300;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	color: $darkColor;
 	background-image: linear-gradient(
 						transparent 20%,

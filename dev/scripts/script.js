@@ -17,6 +17,15 @@ portfolio.scrollMagicScene = function (elementID, classToAdd) {
 	.addTo(portfolio.controller)
 }
 
+portfolio.portfolioItems = function (elementID, classToAdd) {
+	let newScene = new ScrollMagic.Scene({
+		triggerElement: elementID,
+		offset: portfolio.offset + 100
+	})
+		.setClassToggle(elementID, classToAdd)
+		.addTo(portfolio.controller)
+}
+
 portfolio.removeLandingPage = function (elementID, classToAdd) {
 	let newScene = new ScrollMagic.Scene({
 		triggerElement: elementID,
@@ -67,8 +76,10 @@ portfolio.scrollMagicSceneDuration = function (elementID, classToAdd, customDura
 
 portfolio.scrollMagicAnimations = function() {
 	//Portfolio Items
-	portfolio.scrollMagicScene('#portfolioItem01', 'portfolioFadeIn');
-	portfolio.scrollMagicScene('#portfolioItem02', 'portfolioFadeIn');
+	portfolio.portfolioItems('#portfolioPokedex', 'portfolioFadeIn');
+	portfolio.portfolioItems('#portfolioReact', 'portfolioFadeIn');
+	portfolio.portfolioItems('#portfolioHearthstone', 'portfolioFadeIn');
+	portfolio.portfolioItems('#portfolioResponsive', 'portfolioFadeIn');
 	//Heading Line
 	portfolio.headingLineScene('#about__headerLine', 'sectionHeader__line--slide');
 	portfolio.headingLineScene('#portfolio__headerLine', 'sectionHeader__line--slide');
