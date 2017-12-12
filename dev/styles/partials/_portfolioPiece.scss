@@ -48,10 +48,13 @@
 .portfolioSampleImage {
 	width: 100%;
 }
+.hearthstoneImage {
+	border: 1px solid #222222;
+}
 .portfolioSampleImage--reflection {
 	position: absolute;
 	transform: scaleY(-1);
-	opacity: 0.3;
+	opacity: 0.25;
 	width: 100%;
 }
 .sampleImageFade {

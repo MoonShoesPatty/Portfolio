@@ -3,24 +3,23 @@
 .subSection {
 	position: relative;
 	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.aboutHeadshotWrapper {
+	width: 30%;
 }
 .aboutHeadshot {
-	width: 30%;
+	width: 100%;
 	display: block;
-	// position: absolute;
-	// top: 50%;
-	// left: 5%;
-	// transform: translateY(-50%);
 }
 .subSection__textWrapper {
 	border-bottom: 3px solid $mainColor;
 	width: 65%;
 	color: $lightColor;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	// position: relative;
-	// left: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 .subSection__header {
 	font-size: 2rem;
@@ -90,7 +89,7 @@
 	background-image: linear-gradient(to bottom, 
 						rgba(0,0,0,1) 50%,
 						rgb(3, 123, 160));
-	opacity: 0.18;
+	opacity: 0.2;
 	-webkit-background-clip: text;
 	background-clip: text;
 }
