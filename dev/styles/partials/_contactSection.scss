@@ -12,12 +12,41 @@
 	display: flex;
 	justify-content: center;
 }
+.contactInfo li {
+	position: relative;
+}
+.contactInfo li:first-child {
+	margin-right: 50px;
+}
+.contactBackground {
+	color: $lightColor;
+	position: absolute;
+	bottom: -20px;
+	left: 20px;
+	z-index: 150;
+	font-size: 5rem;
+}
+.contactBackground i {
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(190deg,
+						transparent 30%,
+						rgba(255,255,255,0.5) 45%,
+						transparent 48%),
+				linear-gradient(to top, 
+					rgb(255, 255, 255),
+					rgb(94, 94, 94));
+	-webkit-background-clip: text;
+	background-clip: text;
+	opacity: 0.15;
+}
 .contactInfoItem {
 	font-family: $bodyFont;
 	color: $mainColor;
 	text-decoration: none;
 	font-size: 1.2rem;
 	transition: all 0.2s ease-out;
+	position: relative;
+	z-index: 200;
 }
 .contactInfoItem::after {
 	content: '';
@@ -29,9 +58,6 @@
 	transition: all 0.4s ease-out;
 	position: relative;
 	left: 0;
-}
-.contactInfo li:first-child {
-	margin-right: 50px;
 }
 .contactInfoItem:hover, .contactInfoItem:focus {
 	color: $lightColor;
@@ -46,8 +72,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 70%;
-	margin: 0 auto;
-	margin-top: 50px;
+	margin: 50px auto;
 	overflow: hidden;
 }
 .contactForm .portfolioItemLink {
@@ -59,14 +84,16 @@
 	font-family: $bodyFont;
 	color: rgb(40, 40, 40);
 	padding: 10px;
+	padding-left: 7px;
 	padding-bottom: 7px;
 	border: none;
 	outline: none;
 	margin-bottom: 15px;
 	transition: all 0.2s ease-out;
+	line-height: 1.1;
 }
 .contactFormInput:focus {
-	border-left: 5px solid $mainColor;
+	border-left: 7px solid $mainColor;
 }
 .hiddenLabel {
 	position: absolute;

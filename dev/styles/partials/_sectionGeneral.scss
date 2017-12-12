@@ -58,9 +58,11 @@ section, main {
 .subSection__bodyText {
 	font-size: 1.5rem;
 	font-weight: 300;
+	line-height: 1.1;
 }
 .subSection__bodyText em {
 	// color: $mainColor;
 	font-style: normal;
 	font-weight: bold;
+	letter-spacing: 1px;
 }
