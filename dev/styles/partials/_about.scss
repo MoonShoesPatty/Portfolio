@@ -27,6 +27,9 @@
 	right: 0;
 	bottom: 0;
 }
+.aboutSection .subSection__bodyText:nth-child(2) {
+	margin-top: 0;
+}
 .subSection__textWrapper {
 	width: 65%;
 	color: $lightColor;
@@ -67,6 +70,7 @@
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 50px;
+	list-style-type: none;
 }
 .skillItem {
 	width: 20%;

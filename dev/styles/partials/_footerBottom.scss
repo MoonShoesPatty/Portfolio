@@ -1,0 +1,48 @@
+footer .wrapper {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    font-size: 1.2rem;
+	margin-bottom: 30px;
+}
+footer p {
+	color: $lightColor;
+	margin: 20px;
+}
+footer a {
+	color: $mainColor;
+	text-decoration: none;
+	font-family: $bodyFont;
+}
+footer a:hover {
+	color: $lightColor;
+}
+footer a i {
+	margin-left: 5px;
+	color: $lightColor;
+}
+footer a::after {
+	content: '';
+	display: block;
+	background-color: $mainColor;
+	width: 0;
+	opacity: 0;
+	height: 2px;
+	transition: all 0.4s ease-out;
+	position: relative;
+	left: 0;
+}
+footer a:hover::after, footer a:focus::after {
+	opacity: 1;
+	width: 100%;
+}
+footer::before {
+	content: '';
+	display: block;
+	margin-bottom: 5px;
+	height: 3px;
+	width: 100%;
+	background-image: linear-gradient(to right, transparent, rgb(18, 183, 233), transparent);
+	position: relative;
+	z-index: 100;
+}
