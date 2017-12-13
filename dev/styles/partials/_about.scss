@@ -3,11 +3,16 @@
 .subSection {
 	position: relative;
 	margin-top: 50px;
-	display: flex;
-	justify-content: space-between;
 }
 .aboutHeadshotWrapper {
-	width: 30%;
+	width: 40%;
+	float: left;
+	margin: 0 15px 10px 0;
+}
+.aboutDescWrapper  {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
 }
 .aboutHeadshot {
 	width: 100%;
@@ -17,7 +22,7 @@
 	position: absolute;
 	transform: scaleY(-1);
 	opacity: 0.15;
-	width: 30%;
+	width: 40%;
 }
 .headshotImageFade {
 	background-image: linear-gradient(to bottom, black 50%, transparent);
@@ -43,7 +48,10 @@
 .subSection__header {
 	font-size: 2rem;
 	margin: 0;
-	color: white;
+	color: $lightColor;
+}
+.aboutSection .subSection__bodyText {
+	color: $lightColor;
 }
 .skillsHeader {
 	width: 90%;
@@ -55,11 +63,15 @@
 	display: block;
 	margin-top: 5px;
 	margin-bottom: 20px;
-	height: 3px;
 	width: 100%;
+	height: 3px;
 	background-image: linear-gradient(to right, transparent, rgb(18, 183, 233) 10%, transparent);
 	position: relative;
 	z-index: 100;
+}
+.aboutDescWrapper .subSection__header::after {
+	margin-left: calc(40% + 15px);
+	width: calc(60% - 15px);
 }
 
 /* ----- SKILLS SECTION -----*/

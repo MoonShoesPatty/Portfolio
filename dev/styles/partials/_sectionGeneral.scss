@@ -3,8 +3,8 @@ section, main {
 	padding: 50px 0;
 	background-color: $darkColor;
 	z-index: -100;
-	//background-image: linear-gradient(to right, black, transparent 10%, transparent 90%, black)
 }
+
 // Section title
 .sectionHeader {
     position: relative;
@@ -24,6 +24,8 @@ section, main {
 .sectionHeader__line--slide {
 	width: 100%;
 }
+
+// Animations
 @keyframes headingAccentAnimation {
 	0% {
 		width: 0;
@@ -44,16 +46,6 @@ section, main {
 	display: inline-block;
     background-color: $darkColor;
 	color: $lightColor;
-	// background-image: linear-gradient(
-	// 					transparent 30%,
-	// 					rgba(255,255,255,0.2) 45%,
-	// 					transparent 48%),
-	// 			linear-gradient(to bottom, 
-	// 				rgb(212, 212, 212),
-	// 				rgb(112, 112, 112));
-    // -webkit-text-fill-color: transparent;
-	// -webkit-background-clip: text;
-	// background-clip: text;
 }
 .subSection__bodyText {
 	font-size: 1.4rem;
@@ -61,7 +53,6 @@ section, main {
 	line-height: 1.1;
 }
 .subSection__bodyText em {
-	// color: $mainColor;
 	font-style: normal;
 	font-weight: bold;
 	letter-spacing: 1px;
