@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+        font-size: 64px;
+    }
+    .skillItem__icon, .skillItem__icon--reflection {
+        font-size: 4.5rem;
+    }
+    .portfolioImageWrapper, .portfolioDescriptionWrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .portfolioItem {
+        .subSection__header {
+            order: 1;
+        }
+        .portfolioImageWrapper {
+            order: 2;
+            margin-bottom: 70px;
+        }
+        .portfolioDescriptionWrapper {
+            order: 3;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .portfolioExtras {
+            order: 4;
+        }
+        .portfolioLinkWrapper {
+            order: 5;
+        }
+    }
+}

@@ -16,7 +16,7 @@
 .aboutHeadshotImage--reflection {
 	position: absolute;
 	transform: scaleY(-1);
-	opacity: 0.25;
+	opacity: 0.15;
 	width: 30%;
 }
 .headshotImageFade {
@@ -28,7 +28,6 @@
 	bottom: 0;
 }
 .subSection__textWrapper {
-	border-bottom: 3px solid $mainColor;
 	width: 65%;
 	color: $lightColor;
 	display: flex;
@@ -43,13 +42,29 @@
 	margin: 0;
 	color: white;
 }
+.skillsHeader {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+.aboutSection .subSection__header::after {
+	content: '';
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	height: 3px;
+	width: 100%;
+	background-image: linear-gradient(to right, transparent, rgb(18, 183, 233) 10%, transparent);
+	position: relative;
+	z-index: 100;
+}
 
 /* ----- SKILLS SECTION -----*/
 .skillsList {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	margin-top: 50px;
 }

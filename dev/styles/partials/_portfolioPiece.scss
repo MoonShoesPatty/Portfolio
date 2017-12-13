@@ -76,6 +76,8 @@
 	margin-top: 25px;
 	padding: 0;
 	justify-content: center;
+	position: relative;
+	z-index: 150;
 }
 .portfolioConceptItem {
 	font-family: $bodyFont;
