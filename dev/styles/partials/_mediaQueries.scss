@@ -21,6 +21,7 @@
             order: 3;
             width: 80%;
             margin: 0 auto;
+            z-index: 250;
         }
         .portfolioExtras {
             order: 4;
@@ -28,5 +29,74 @@
         .portfolioLinkWrapper {
             order: 5;
         }
+    }
+}
+@media (max-width: 668px) {
+    .portfolioItem {
+        .portfolioImageWrapper {
+            margin-bottom: 40px;
+        }
+    }
+    .portfolioConceptsList::before {
+        content: '';
+        display: block;
+        margin-bottom: 20px;
+        height: 3px;
+        width: 100%;
+        background-image: linear-gradient(to right, transparent, rgb(18, 183, 233), transparent);
+        position: relative;
+        z-index: 100;
+    }
+    .wrapper {
+        padding: 0 30px;
+    }
+    .contactForm {
+        width: 80%;
+        margin: 30px auto;
+    }
+    .contactInfo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contactInfo li:first-child, .contactInfo li {
+        margin: 0 0 20px 0;
+    }
+}
+@media (max-width: 480px) {
+    .portfolioItem {
+        .portfolioImageWrapper {
+            margin-bottom: 30px;
+        }
+        .portfolioDescriptionWrapper {
+            width: 100%;
+        }
+    }
+    .subSection__bodyText {
+        font-size: 1.2rem;
+    }
+    .contactForm {
+        width: 90%;
+    }
+    .portfolioConceptsList {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .portfolioLinkWrapper {
+        flex-direction: column;
+    }
+    .portfolioItemLink:first-child {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .portfolioItemLink {
+        text-align: center;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .contactInfoItem {
+        font-size: 1rem;
     }
 }
