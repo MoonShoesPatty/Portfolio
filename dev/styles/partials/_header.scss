@@ -82,6 +82,12 @@ header {
 	margin: 0;
 	position: relative;
 }
+.pageSubtitle span::before {
+	content: '-';
+}
+.pageSubtitle span:first-child::before {
+	content: '';
+}
 .pageSubtitle span:nth-child(1) {
 	animation: initialText 1s 1.4s forwards ease-out;
 }
