@@ -1,3 +1,6 @@
+/* ----- MEDIA QUERIES -----*/
+
+/* ----- 768 -----*/
 @media (max-width: 768px) {
     .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
         font-size: 80px;
@@ -31,6 +34,8 @@
         }
     }
 }
+
+/* ----- 668 -----*/
 @media (max-width: 668px) {
     .portfolioItem {
         .portfolioImageWrapper {
@@ -74,6 +79,8 @@
         display: none;
     }
 }
+
+/* ----- 480 -----*/
 @media (max-width: 480px) {
     .portfolioItem {
         .portfolioImageWrapper {
@@ -162,6 +169,7 @@
     }
 }
 
+/* ----- 380 -----*/
 @media (max-width: 380px) {
     .skillItem__icon, .skillItem__icon--reflection {
         font-size: 60px;
