@@ -26,49 +26,86 @@ header {
 .pageTitleWrapper div {
 	position: relative;
 }
-.pageTitleFN, .pageTitleLN {
-	position: relative;
-	background-image: linear-gradient(
-						transparent 30%,
-						rgba(255,255,255,0.2) 45%,
-						transparent 48%),
-				linear-gradient(to bottom, 
-					rgb(49, 207, 255),
-					rgb(1, 104, 136));
-}
-.pageTitleFN { //First Name - First line of title
-	animation: initialText 1.2s forwards ease-out;
-}
-.pageTitleLN { //Last Name - Second line of title
-	animation: initialText 1.2s 0.6s forwards ease-out;
-}
-.pageTitleFN--reflection { //First Name - First line of title
-	animation: initialText--reflection 1.2s forwards ease-out;
-}
-.pageTitleLN--reflection { //Last Name - Second line of title
-	animation: initialText--reflection 1.2s 0.6s forwards ease-out;
-}
-.pageTitleFN--reflection, .pageTitleLN--reflection {
-	position: absolute;
-	left: 50%;
-	background-image: linear-gradient(to bottom, 
-						rgba(0,0,0,1) 50%,
-						rgb(3, 123, 160));
-	transform: scaleY(-1)
-			   translateX(-50%);
-}
-.pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
-	text-transform: uppercase;
-	text-align: center;
-	margin: 0;
-	color: $mainColor;
-    -webkit-text-fill-color: transparent;
-	opacity: 0;
-	margin: 0;
-	font-size: 6rem;
-	-webkit-background-clip: text;
-	background-clip: text;
-}
+
+// styles WITH background-clip: text
+.backgroundcliptext {
+	.pageTitleFN, .pageTitleLN {
+		position: relative;
+		background-image: linear-gradient(
+							transparent 30%,
+							rgba(255,255,255,0.2) 45%,
+							transparent 48%),
+					linear-gradient(to bottom, 
+						rgb(49, 207, 255),
+						rgb(1, 104, 136));
+	}
+	.pageTitleFN { //First Name - First line of title
+		animation: initialText 1.2s forwards ease-out;
+	}
+	.pageTitleLN { //Last Name - Second line of title
+		animation: initialText 1.2s 0.6s forwards ease-out;
+	}
+	.pageTitleFN--reflection { //First Name - First line of title
+		animation: initialText--reflection 1.2s forwards ease-out;
+	}
+	.pageTitleLN--reflection { //Last Name - Second line of title
+		animation: initialText--reflection 1.2s 0.6s forwards ease-out;
+	}
+	.pageTitleFN--reflection, .pageTitleLN--reflection {
+		position: absolute;
+		left: 50%;
+		background-image: linear-gradient(to bottom, 
+							rgba(0,0,0,1) 50%,
+							rgb(3, 123, 160));
+		transform: scaleY(-1)
+				translateX(-50%);
+	}
+	.pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0;
+		color: $mainColor;
+		-webkit-text-fill-color: transparent;
+		opacity: 0;
+		margin: 0;
+		font-size: 6rem;
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+} // styles WITH background-clip: text
+
+
+// styles WITHOUT background-clip: text
+.no-backgroundcliptext {
+	.pageTitleFN, .pageTitleLN {
+		position: relative;
+		color: $mainColor;
+	}
+	.pageTitleFN { //First Name - First line of title
+		animation: initialText 1.2s forwards ease-out;
+	}
+	.pageTitleLN { //Last Name - Second line of title
+		animation: initialText 1.2s 0.6s forwards ease-out;
+	}
+	.pageTitleFN--reflection { //First Name - First line of title
+		animation: initialText--reflection 1.2s forwards ease-out;
+	}
+	.pageTitleLN--reflection { //Last Name - Second line of title
+		animation: initialText--reflection 1.2s 0.6s forwards ease-out;
+	}
+	.pageTitleFN--reflection, .pageTitleLN--reflection {
+		display: none;
+	}
+	.pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0;
+		opacity: 0;
+		margin: 0;
+		font-size: 6rem;
+	}
+} // styles WITHOUT background-clip: text
+
 .pageTitleLN {
 	margin-bottom: 50px;
 }

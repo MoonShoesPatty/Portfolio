@@ -74,6 +74,13 @@ portfolio.scrollMagicSceneDuration = function (elementID, classToAdd, customDura
 		.addTo(portfolio.controller)
 }
 
+// Modernizr for background-clip
+portfolio.modernize = function () {
+	Modernizr.addTest('backgroundclip', function () {
+		
+	});
+}
+
 portfolio.scrollMagicAnimations = function() {
 	//Portfolio Items
 	portfolio.portfolioItems('#portfolioPokedex', 'portfolioFadeIn');
