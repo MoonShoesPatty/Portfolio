@@ -87,6 +87,7 @@ portfolio.scrollMagicAnimations = function() {
 	portfolio.portfolioItems('#portfolioReact', 'portfolioFadeIn');
 	portfolio.portfolioItems('#portfolioHearthstone', 'portfolioFadeIn');
 	portfolio.portfolioItems('#portfolioResponsive', 'portfolioFadeIn');
+	portfolio.portfolioItems('#portfolioJS30', 'portfolioFadeIn');
 	//Heading Line
 	portfolio.headingLineScene('#about__headerLine', 'sectionHeader__line--slide');
 	portfolio.headingLineScene('#portfolio__headerLine', 'sectionHeader__line--slide');
