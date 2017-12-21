@@ -4,6 +4,9 @@ section, main, footer {
 	background-color: $darkColor;
 	z-index: -100;
 }
+footer {
+	padding-bottom: 0;
+}
 
 // Section title
 .sectionHeader {

@@ -2,15 +2,17 @@
 
 /* ----- 768 -----*/
 @media (max-width: 768px) {
-    .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
-        font-size: 80px;
-    }
-    .skillItem__icon, .skillItem__icon--reflection {
-        font-size: 4.5rem;
-    }
-    .portfolioImageWrapper, .portfolioDescriptionWrapper {
-        width: 100%;
-        text-align: center;
+    .backgroundcliptext, .no-backgroundcliptext {
+        .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+            font-size: 80px;
+        }
+        .skillItem__icon, .skillItem__icon--reflection {
+            font-size: 4.5rem;
+        }
+        .portfolioImageWrapper, .portfolioDescriptionWrapper {
+            width: 100%;
+            text-align: center;
+        }
     }
     .portfolioItem {
         .subSection__header {
@@ -37,13 +39,15 @@
 
 /* ----- 668 -----*/
 @media (max-width: 668px) {
-    .portfolioItem {
-        .portfolioImageWrapper {
-            margin-bottom: 40px;
+    .backgroundcliptext, .no-backgroundcliptext {
+        .portfolioItem {
+            .portfolioImageWrapper {
+                margin-bottom: 40px;
+            }
         }
-    }
-    .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
-        font-size: 64px;
+        .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+            font-size: 64px;
+        }
     }
     .portfolioConceptsList::before {
         content: '';
@@ -90,26 +94,28 @@
             width: 100%;
         }
     }
-    .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
-        font-size: 48px;
-    }
-    .pageTitleWrapper {
-        width: 100%;
-    }
-    .sectionHeader__title {
-        font-size: 2.5rem;
-    }
-    .pageSubtitle {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.9rem;
-        opacity: 0.5;
-    }
-    .pageSubtitle span::before {
-        content: '';
-    }
-    .pageSubtitle span {
-        margin: 5px 0;
+    .backgroundcliptext, .no-backgroundcliptext {
+        .pageTitleFN, .pageTitleLN, .pageTitleFN--reflection, .pageTitleLN--reflection {
+            font-size: 48px;
+        }
+        .pageTitleWrapper {
+            width: 100%;
+        }
+        .sectionHeader__title {
+            font-size: 2.5rem;
+        }
+        .pageSubtitle {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.9rem;
+            opacity: 0.5;
+        }
+        .pageSubtitle span::before {
+            content: '';
+        }
+        .pageSubtitle span {
+            margin: 5px 0;
+        }
     }
     .subSection__bodyText {
         font-size: 1.2rem;
@@ -171,11 +177,13 @@
 
 /* ----- 380 -----*/
 @media (max-width: 380px) {
-    .skillItem__icon, .skillItem__icon--reflection {
-        font-size: 60px;
-    }
-    .sectionHeader__title {
-        font-size: 2rem;
+    .backgroundcliptext, .no-backgroundcliptext {
+        .skillItem__icon, .skillItem__icon--reflection {
+            font-size: 60px;
+        }
+        .sectionHeader__title {
+            font-size: 2rem;
+        }
     }
     .contactForm .portfolioItemLink {
         padding-left: 0;
